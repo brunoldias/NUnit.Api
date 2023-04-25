@@ -23,7 +23,7 @@ jobs:
         dotnet-version: '7.0.203'
               
    - name: Restore
-     run: dotnet restore ./NUnit.Api.sln
+     run: dotnet restore -nowarn:msb3202,nu1503 -p:RestoreUseSkipNonexistentTargets=false
      
    - name: Build
      run: dotnet build ./NUnit.Api.sln --configuration Release --no-restore
