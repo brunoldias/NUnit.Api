@@ -12,7 +12,7 @@ env:
   
 jobs:
  publish: 
-  runs-on: ubuntu-lastes
+  runs-on: ubuntu-latest
 
   steps:
    - uses: actions/checkout@v3
