@@ -23,7 +23,7 @@ jobs:
         dotnet-version: '7.0.203'
               
    - name: Restore
-     run: dotnet restore ./Nunit.Api.sln
+     run: dotnet restore
      
    - name: Build
      run: dotnet build ./Nunit.Api.sln --configuration Release --no-restore
