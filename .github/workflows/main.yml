@@ -23,10 +23,10 @@ jobs:
         dotnet-version: '7.0.203'
               
    - name: Restore
-     run: dotnet restore ./Nunit.Api.sln
+     run: dotnet restore ../Nunit.Api.sln
      
    - name: Build
-     run: dotnet build ./Nunit.Api.sln --configuration Release --no-restore
+     run: dotnet build ../Nunit.Api.sln --configuration Release --no-restore
      
    - name: Test
      run: dotnet test --no-restore --verbosity normal
