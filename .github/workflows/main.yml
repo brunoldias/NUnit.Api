@@ -1,0 +1,29 @@
+name: Publish
+
+on:
+ workflow_dispatch:
+ push:
+  branches:
+  - master
+  
+jobs:
+ publish: 
+  runs-on: ubuntu-lastes
+
+  steps:
+   - uses: actions/checkout@v3
+   
+   - name: Setup .NET
+     uses: actions/sertup-dotnet@v3
+     with: 
+        dotnet-version: '7.0.x'
+      
+   - name: Restore
+     run: dotnet restore ./Nunit.Api.sln
+     
+   - name: Build
+     run: dotnet build ./Nunit.Api.sln --configuration Release --no-restore
+       
+   - name: Publish
+     run: dotnet build ./Nunit.Api.sln --configuration Release --no-build
+      
