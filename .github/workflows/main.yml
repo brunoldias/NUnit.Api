@@ -23,16 +23,16 @@ jobs:
         dotnet-version: '7.0.203'
               
    - name: Restore
-     run: dotnet restore ./NUnit.Api/Nunit.Api.csproj
+     run: dotnet restore ./NUnit.Api.sln
      
    - name: Build
-     run: dotnet build ./NUnit.Api/Nunit.Api.csproj --configuration Release --no-restore
+     run: dotnet build ./NUnit.Api.sln --configuration Release --no-restore
      
    - name: Test
      run: dotnet test --no-restore --verbosity normal
        
    - name: Publish
-     run: dotnet build ./NUnit.Api/Nunit.Api.csproj --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'     
+     run: dotnet build ./NUnit.Api.sln --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'     
      
      
    - name: Deployment
