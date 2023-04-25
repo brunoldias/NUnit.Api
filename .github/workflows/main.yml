@@ -26,7 +26,7 @@ jobs:
      run: dotnet restore -nowarn:msb3202,nu1503 -p:RestoreUseSkipNonexistentTargets=false
      
    - name: Build
-     run: dotnet build NUnit.Api.sln --configuration Release --no-restore
+     run: dotnet build NUnit.Api.csproj --configuration Release --no-restore
      
    - name: Test
      run: dotnet test --no-restore --verbosity normal
