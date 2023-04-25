@@ -3,7 +3,7 @@ using NUnit.Core.Concrats;
 using NUnit.Core.Config;
 using Refit;
 
-namespace Nunit.Api.StartUp
+namespace NUnit.Api.StartUp
 {
     public static class RefitStartUp
     {

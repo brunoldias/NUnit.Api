@@ -3,7 +3,7 @@
 using NUnit.Core.Concrats.Services;
 using NUnit.Core.Services;
 
-namespace Nunit.Api.StartUp
+namespace NUnit.Api.StartUp
 {
     public static class DepencyInjection
     {

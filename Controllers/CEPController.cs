@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using NUnit.Core.Concrats.Services;
 
-namespace Nunit.Api.Controllers
+namespace NUnit.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

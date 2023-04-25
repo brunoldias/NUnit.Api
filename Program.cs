@@ -1,6 +1,6 @@
 
 using Microsoft.Extensions.Configuration;
-using Nunit.Api.StartUp;
+using NUnit.Api.StartUp;
 using NUnit.Core.Config;
 
 namespace Nunit.Api
