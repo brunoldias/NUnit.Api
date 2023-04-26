@@ -10,7 +10,7 @@ This project represents unit tests using interfaces and services created for api
 
 ## Api usaged for tests
  - Url: https://viacep.com.br/ws/{cep}/json/
- - Detail documetation [Via Cep](https://viacep.com.br/)
+ - Detail documentation [Via Cep](https://viacep.com.br/)
  ##
-### For more detail documentaion, please visit [Refit](https://github.com/reactiveui/refit) & [NUnit](https://nunit.org/).
+### For more detail documentation, please visit [Refit](https://github.com/reactiveui/refit) & [NUnit](https://nunit.org/).
 
