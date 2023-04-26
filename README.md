@@ -1,4 +1,4 @@
-## NUnit Test 
+## NUnit Test - Utilizing .NET 7
 This project represents unit tests using interfaces and services created for api.
 ## 💻 Language & Libaries
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
